@@ -37,25 +37,9 @@
       "price": "₱120 / 100g",
       "color": "#6E9B6E",
       "desc": "Loaded with organic moringa leaves to support your pup's immune system and digestion."
-    },
-    {
-      "name": "j",
-      "desc": "j",
-      "price": "111",
-      "tag": "j",
-      "color": "#d97706",
-      "image": "/images/logo.jpg"
-    },
-    {
-      "name": "h",
-      "desc": "h",
-      "price": "77",
-      "tag": "h",
-      "color": "#d97706",
-      "image": "/images/logo.jpg"
     }
   ],
-  "facebookPageUrl": "https://facebook.com",
+  "facebookPageUrl": "https://www.facebook.com/barknibblesph",
   "promoBanner": "🐾 PAW-SOME PROMO: Buy any 3 pouches & get ₱50 OFF! Message us to claim.",
   "messengerUrl": "https://m.me/yourpageusername",
   "promo_text": "what",
