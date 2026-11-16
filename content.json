@@ -3,7 +3,7 @@
   "businessName": "Bark Nibbles",
   "tagline": "Organic Dog Treats & Pastries • Lovingly Handmade Since 2016",
   "logoImage": "/images/logo.jpg",
-  "heroSubtitle": "g",
+  "heroSubtitle": "100% all-natural, preservative-free baked treats made with real local ingredients like malunggay, camote, and banana.",
   "hero_title": "what",
   "treats": [
     {
@@ -37,6 +37,22 @@
       "price": "₱120 / 100g",
       "color": "#6E9B6E",
       "desc": "Loaded with organic moringa leaves to support your pup's immune system and digestion."
+    },
+    {
+      "name": "j",
+      "desc": "j",
+      "price": "111",
+      "tag": "j",
+      "color": "#d97706",
+      "image": "/images/logo.jpg"
+    },
+    {
+      "name": "h",
+      "desc": "h",
+      "price": "77",
+      "tag": "h",
+      "color": "#d97706",
+      "image": "/images/logo.jpg"
     }
   ],
   "facebookPageUrl": "https://facebook.com",
