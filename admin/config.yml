@@ -6,28 +6,12 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "promo_settings"
-    label: "Bark Nibbles Website Editor"
+  - name: "content"
+    label: "Homepage, Promos & Flavors"
     files:
-      - label: "Homepage, Promos & Flavors"
-        name: "home"
-        file: "content.json"
+      - file: "content.json"
+        label: "Site Content"
+        name: "site_content"
         fields:
-          - { label: "Business Logo (Circle)", name: "logoImage", widget: "image", required: false }
-          - { label: "Business Name (For SEO)", name: "businessName", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Top Promo Banner", name: "promoBanner", widget: "string" }
-          - { label: "Main Hero Headline", name: "heroTitle", widget: "string" }
-          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
-          - { label: "Messenger Order Link", name: "messengerUrl", widget: "string" }
-          - { label: "Facebook Page Link", name: "facebookPageUrl", widget: "string" }
-         - label: "Treat Flavors"
-            name: "treats"
-            widget: "list"
-            fields:
-              - { label: "Product Photo", name: "image", widget: "image", required: false }
-              - { label: "Flavor Name", name: "name", widget: "string" }
-              - { label: "Badge Tag", name: "tag", widget: "string" }
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Accent Color (Hex)", name: "color", widget: "string", default: "#5A87A0" }
-              - { label: "Description", name: "desc", widget: "text" }
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Promo Text", name: "promo_text", widget: "string"}
