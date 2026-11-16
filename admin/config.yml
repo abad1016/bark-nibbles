@@ -13,13 +13,20 @@ collections:
         label: "Site Content"
         name: "site_content"
         fields:
-          - {label: "Logo Image", name: "logo", widget: "image"}
-          - {label: "Hero Title", name: "hero_title", widget: "string"}
-          - {label: "Promo Text", name: "promo_text", widget: "string"}
-          - label: "Product List"
-            name: "products"
+          - {label: "Logo Image", name: "logoImage", widget: "image"}
+          - {label: "Promo Banner Text", name: "promoBanner", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
+          - {label: "Messenger URL", name: "messengerUrl", widget: "string"}
+          - {label: "Facebook Page URL", name: "facebookPageUrl", widget: "string"}
+          - label: "Treats Grid"
+            name: "treats"
             widget: "list"
             fields:
-              - {label: "Product Name", name: "name", widget: "string"}
-              - {label: "Price / Details", name: "price", widget: "string"}
+              - {label: "Treat Name", name: "name", widget: "string"}
+              - {label: "Description", name: "desc", widget: "string"}
+              - {label: "Price", name: "price", widget: "string"}
+              - {label: "Tag (e.g. Best Seller)", name: "tag", widget: "string"}
+              - {label: "Color Code (e.g. #d97706)", name: "color", widget: "string"}
               - {label: "Product Image", name: "image", widget: "image"}
