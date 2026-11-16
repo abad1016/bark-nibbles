@@ -1,0 +1,317 @@
+:root {
+  --slate-blue: #5A87A0;
+  --slate-dark: #3F6479;
+  --biscuit: #D98A4E;
+  --cream: #FAF8F5;
+  --text-dark: #2B2D2F;
+  --text-muted: #5C6268;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand { font-family: 'Fredoka', sans-serif; }
+
+/* Promo Bar */
+.promo-bar {
+  background: var(--biscuit);
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Circular Logo Holder */
+.logo-holder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #F4F7F9;
+  border: 2px solid var(--slate-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.logo-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-placeholder {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--slate-dark);
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #5A87A0 0%, #446B82 100%);
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+.hero-content { max-width: 760px; margin: 0 auto; }
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.18);
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.92;
+  margin-bottom: 28px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 99px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: #fff; color: var(--slate-dark); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+.btn-secondary { background: rgba(255,255,255,0.15); color: #fff; border: 2px solid rgba(255,255,255,0.6); }
+.btn-sm { background: var(--slate-blue); color: #fff; padding: 8px 18px; font-size: 0.9rem; }
+
+.trust-pills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+/* Treats Grid */
+.section { padding: 65px 20px; }
+.container { max-width: 1050px; margin: 0 auto; }
+.section-title { text-align: center; font-size: 2rem; color: var(--slate-dark); margin-bottom: 6px; }
+.section-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 40px; }
+
+.treats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+.treat-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Clips the top image neatly to the card corners */
+}
+
+/* Full-width image box on top of each card */
+.treat-img-box {
+  width: 100%;
+  height: 190px; /* Same width as the box, fixed clean height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.treat-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.treat-img-placeholder {
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+/* Keeps the text area padded and the footer aligned at the bottom */
+.treat-body {
+  padding: 22px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.treat-tag {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.treat-card h3 { font-size: 1.35rem; margin-bottom: 8px; }
+.treat-desc { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 18px; }
+.treat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+.price { font-weight: 700; font-size: 1.05rem; color: var(--text-dark); }
+.order-link { color: var(--slate-blue); font-weight: 700; text-decoration: none; }
+
+/* Why Us */
+.why-us { background: #F0ECE4; padding: 50px 20px; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.why-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+}
+.why-card h3 { color: var(--slate-dark); margin-bottom: 8px; }
+.why-card p { font-size: 0.92rem; color: var(--text-muted); }
+
+/* Footer */
+.footer {
+  background: var(--slate-dark);
+  color: #fff;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.9rem;
+}
+.footer a { color: #FFD2A6; text-decoration: underline; }
+
+/* =========================================
+   RESPONSIVE DESIGN (Tablets & Phones)
+   ========================================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 55px 18px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .section {
+    padding: 50px 18px;
+  }
+
+  .treats-grid {
+    grid-template-columns: repeat(2, 1fr); /* Clean 2x2 grid on tablets */
+    gap: 16px;
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .promo-bar {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+  }
+
+  .nav-container {
+    padding: 10px 16px;
+  }
+
+  /* Scales the logo circle neatly for phone screens */
+  .logo-holder {
+    width: 76px;
+    height: 76px;
+    margin-bottom: -0;
+  }
+
+  .hero {
+    padding: 46px 16px 40px;
+  }
+
+  .badge {
+    font-size: 0.76rem;
+    padding: 5px 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.98rem;
+  }
+
+  /* Makes hero buttons full-width and easy to tap with a thumb */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .trust-pills {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  /* Stacks product cards into 1 clean column on phones */
+  .treats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .treat-img-box {
+    height: 210px; /* Slightly taller so product photos look crisp on mobile */
+  }
+}

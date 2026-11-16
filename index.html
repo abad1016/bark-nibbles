@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Bark Nibbles | Organic Dog Treats & Pastries (Handmade Since 2016)</title>
+  <meta name="description" content="Help your dogs maintain a healthy diet with a healthier snack. All-natural, handmade dog treats in Milk Carrot, Camote Bacon, Banana Milk & Malunggay flavors." />
+  <meta name="keywords" content="organic dog treats Philippines, handmade pet pastries, healthy dog snacks, Bark Nibbles" />
+  
+  <!-- Friendly Rounded Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Promo Announcement Bar -->
+  <div id="promo-banner" class="promo-bar">
+    🐾 PAW-SOME PROMO: Buy any 3 pouches & get ₱50 OFF! Message us to claim.
+  </div>
+
+ <!-- Navigation with Circle Logo Holder Only -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo-holder" aria-label="Bark Nibbles Home">
+        <img id="logo-img" src="" alt="Bark Nibbles Logo" style="display: none;">
+        <span id="logo-placeholder" class="logo-placeholder">🐾 Logo</span>
+      </a>
+      <a id="nav-cta" href="#treats" class="btn btn-sm">View Treats</a>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <span id="tagline" class="badge">Organic Dog Treats & Pastries • Lovingly Handmade Since 2016</span>
+      <h1 id="hero-title">Help your dogs maintain a healthy diet with a healthier snack</h1>
+      <p id="hero-subtitle">100% all-natural, preservative-free baked treats made with real local ingredients like malunggay, camote, and banana.</p>
+      
+      <div class="hero-buttons">
+        <a id="messenger-btn" href="https://m.me/" target="_blank" class="btn btn-primary">
+          💬 Order via Messenger
+        </a>
+        <a href="#treats" class="btn btn-secondary">Explore Flavors</a>
+      </div>
+
+      <div class="trust-pills">
+        <span>🌿 100% Organic Ingredients</span>
+        <span>🍪 Baked Fresh in Small Batches</span>
+        <span>🐶 Trusted Since 2016</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product / Flavor Showcase -->
+  <section id="treats" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Signature Pouch Flavors</h2>
+      <p class="section-subtitle">Resealable 100g pouches packed with wholesome, tail-wagging crunch.</p>
+      
+      <div id="treats-grid" class="treats-grid">
+        <!-- Populated automatically from content.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Bark Nibbles Banner -->
+  <section class="why-us">
+    <div class="container why-grid">
+      <div class="why-card">
+        <h3>No Artificial Junk</h3>
+        <p>Zero preservatives, artificial coloring, or refined sugars—just pure, human-grade ingredients.</p>
+      </div>
+      <div class="why-card">
+        <h3>Local Superfoods</h3>
+        <p>Enriched with nutrient-dense Philippine produce like malunggay and sweet camote.</p>
+      </div>
+      <div class="why-card">
+        <h3>Custom Pet Pastries</h3>
+        <p>Celebrating a pup's barkday? Message us on Facebook for custom cakes and party packs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><strong>Bark Nibbles - Organic Dog Treats & Pastries</strong></p>
+    <p>Lovingly Handmade Since 2016 • <a id="fb-link" href="https://facebook.com" target="_blank">Visit our Facebook Page</a></p>
+  </footer>
+
+  <!-- Dynamic Content Loader -->
+  <!-- Dynamic Content Loader -->
+  <script>
+    fetch('./content.json')
+      .then(res => res.json())
+      .then(data => {
+        // Load Logo into Circle Holder if uploaded
+        const logoImg = document.getElementById('logo-img');
+        const logoPlaceholder = document.getElementById('logo-placeholder');
+        if (data.logoImage) {
+          logoImg.src = data.logoImage;
+          logoImg.style.display = 'block';
+          logoPlaceholder.style.display = 'none';
+        }
+
+        document.getElementById('promo-banner').textContent = data.promoBanner;
+        document.getElementById('tagline').textContent = data.tagline;
+        document.getElementById('hero-title').textContent = data.heroTitle;
+        document.getElementById('hero-subtitle').textContent = data.heroSubtitle;
+        document.getElementById('messenger-btn').href = data.messengerUrl;
+        document.getElementById('fb-link').href = data.facebookPageUrl;
+
+       const grid = document.getElementById('treats-grid');
+        grid.innerHTML = data.treats.map(treat => `
+          <div class="treat-card" style="border-top: 6px solid ${treat.color}">
+            <div class="treat-img-box" style="background: ${treat.color}15;">
+              ${treat.image 
+                ? `<img src="${treat.image}" alt="${treat.name}">` 
+                : `<span class="treat-img-placeholder" style="color: ${treat.color};">📷 Product Photo</span>`
+              }
+            </div>
+            <div class="treat-body">
+              <div>
+                <span class="treat-tag" style="background: ${treat.color}20; color: ${treat.color}">${treat.tag}</span>
+                <h3>${treat.name}</h3>
+                <p class="treat-desc">${treat.desc}</p>
+              </div>
+              <div class="treat-footer">
+                <span class="price">${treat.price}</span>
+                <a href="${data.messengerUrl}" target="_blank" class="order-link">Order →</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      });
+  </script>
+</body>
+</html>

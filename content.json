@@ -1,0 +1,43 @@
+{
+    "logoImage": "",
+  "businessName": "Bark Nibbles",
+  "tagline": "Organic Dog Treats & Pastries • Lovingly Handmade Since 2016",
+  "promoBanner": "🐾 PAW-SOME PROMO: Buy any 3 pouches & get ₱50 OFF! Message us to claim.",
+  "heroTitle": "Help your dogs maintain a healthy diet with a healthier snack",
+  "heroSubtitle": "100% all-natural, preservative-free baked treats made with real local ingredients like malunggay, camote, and banana.",
+  "messengerUrl": "https://m.me/yourpageusername",
+  "facebookPageUrl": "https://facebook.com",
+  "treats": [
+    {
+      "name": "Milk Carrot",
+      "tag": "Best Seller • Vitamin A Rich",
+      "price": "₱120 / 100g",
+      "color": "#5A87A0",
+      "desc": "Crunchy bite-sized biscuits packed with real carrots and pet-safe milk for healthy vision and coat."
+    },
+    {
+      "image": "",
+      "name": "Camote Bacon",
+      "tag": "High Fiber • Savory",
+      "price": "₱130 / 100g",
+      "color": "#D9777F",
+      "desc": "Sweet potato goodness paired with irresistible smoky bacon flavor dogs go crazy for."
+    },
+    {
+      "image": "",
+      "name": "Banana Milk",
+      "tag": "Gentle on Tummies",
+      "price": "₱120 / 100g",
+      "color": "#E2B14C",
+      "desc": "Naturally sweet potassium-rich bananas baked into crisp, easy-to-digest training treats."
+    },
+    {
+      "image": "",
+      "name": "Malunggay Crunch",
+      "tag": "Superfood • Immunity Boost",
+      "price": "₱120 / 100g",
+      "color": "#6E9B6E",
+      "desc": "Loaded with organic moringa leaves to support your pup's immune system and digestion."
+    }
+  ]
+}
