@@ -1,12 +1,10 @@
 {
-    "logoImage": "",
+  "logo": "/images/logo.jpg",
   "businessName": "Bark Nibbles",
   "tagline": "Organic Dog Treats & Pastries • Lovingly Handmade Since 2016",
-  "promoBanner": "🐾 PAW-SOME PROMO: Buy any 3 pouches & get ₱50 OFF! Message us to claim.",
-  "heroTitle": "Help your dogs maintain a healthy diet with a healthier snack",
+  "logoImage": "",
   "heroSubtitle": "100% all-natural, preservative-free baked treats made with real local ingredients like malunggay, camote, and banana.",
-  "messengerUrl": "https://m.me/yourpageusername",
-  "facebookPageUrl": "https://facebook.com",
+  "hero_title": "what",
   "treats": [
     {
       "name": "Milk Carrot",
@@ -39,5 +37,10 @@
       "color": "#6E9B6E",
       "desc": "Loaded with organic moringa leaves to support your pup's immune system and digestion."
     }
-  ]
+  ],
+  "facebookPageUrl": "https://facebook.com",
+  "promoBanner": "🐾 PAW-SOME PROMO: Buy any 3 pouches & get ₱50 OFF! Message us to claim.",
+  "messengerUrl": "https://m.me/yourpageusername",
+  "promo_text": "what",
+  "heroTitle": "Help your dogs maintain a healthy diet with a healthier snack"
 }
