@@ -13,5 +13,13 @@ collections:
         label: "Site Content"
         name: "site_content"
         fields:
+          - {label: "Logo Image", name: "logo", widget: "image"}
           - {label: "Hero Title", name: "hero_title", widget: "string"}
           - {label: "Promo Text", name: "promo_text", widget: "string"}
+          - label: "Product List"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product Name", name: "name", widget: "string"}
+              - {label: "Price / Details", name: "price", widget: "string"}
+              - {label: "Product Image", name: "image", widget: "image"}
