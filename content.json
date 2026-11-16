@@ -2,7 +2,7 @@
   "logo": "/images/logo.jpg",
   "businessName": "Bark Nibbles",
   "tagline": "Organic Dog Treats & Pastries • Lovingly Handmade Since 2016",
-  "logoImage": "",
+  "logoImage": "/images/logo.jpg",
   "heroSubtitle": "100% all-natural, preservative-free baked treats made with real local ingredients like malunggay, camote, and banana.",
   "hero_title": "what",
   "treats": [
@@ -11,10 +11,11 @@
       "tag": "Best Seller • Vitamin A Rich",
       "price": "₱120 / 100g",
       "color": "#5A87A0",
-      "desc": "Crunchy bite-sized biscuits packed with real carrots and pet-safe milk for healthy vision and coat."
+      "desc": "Crunchy bite-sized biscuits packed with real carrots and pet-safe milk for healthy vision and coat.",
+      "image": "/images/logo.jpg"
     },
     {
-      "image": "",
+      "image": "/images/logo.jpg",
       "name": "Camote Bacon",
       "tag": "High Fiber • Savory",
       "price": "₱130 / 100g",
@@ -22,7 +23,7 @@
       "desc": "Sweet potato goodness paired with irresistible smoky bacon flavor dogs go crazy for."
     },
     {
-      "image": "",
+      "image": "/images/logo.jpg",
       "name": "Banana Milk",
       "tag": "Gentle on Tummies",
       "price": "₱120 / 100g",
@@ -30,7 +31,7 @@
       "desc": "Naturally sweet potassium-rich bananas baked into crisp, easy-to-digest training treats."
     },
     {
-      "image": "",
+      "image": "/images/logo.jpg",
       "name": "Malunggay Crunch",
       "tag": "Superfood • Immunity Boost",
       "price": "₱120 / 100g",
